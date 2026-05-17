@@ -62,7 +62,7 @@ def create_map(rows=20,cols=20):
                 block=CONCRETE
             elif randint(1,100)<=15:
                 block=choice([BRICK,WATER,CONCRETE])
-            elif randint(1, 100) <= 5:
+            elif randint(1, 100) <= 3:
                 block = choice([MISSLE,NEW_BONUS,FUEL])
             cell=_Cell(_canvas,block,BLOCK_SIZE*j,BLOCK_SIZE*i)
             row.append(cell)
